@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.waheguru_ji.todoapp.LoginHere"
+    tools:showIn="@layout/activity_login_here"
+    tools:ignore="GradleDependency">
+
+    <RelativeLayout
+        android:layout_width="384dp"
+        android:layout_height="562dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="-43dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/pass"
+            android:layout_alignStart="@+id/pass"
+            android:layout_marginBottom="26dp"
+            android:background="#ffffb2"
+            android:ems="10"
+            android:imeOptions="actionNext"
+            android:maxLines="1"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:onClick="deleteuser"
+            android:text="@string/enter_username"
+            android:textStyle="bold"
+            tools:ignore="LabelFor" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:maxLines="1"
+            android:layout_marginBottom="33dp"
+            android:background="#ffffb2"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:onClick="deletepass"
+            android:text="@string/enter_password"
+            android:textStyle="bold"
+            tools:ignore="LabelFor"
+            android:layout_above="@+id/button5"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dp"
+            android:background="@drawable/custom_button_ready"
+            android:fontFamily="casual"
+            android:onClick="signIn"
+            android:text="SIGN IN"
+            android:textColor="#ff8000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText"
+            android:layout_marginBottom="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

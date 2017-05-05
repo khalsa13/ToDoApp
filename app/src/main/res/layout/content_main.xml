@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="@string/app_name"
+    android:background="@drawable/bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.waheguru_ji.todoapp.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:ignore="GradleDependency">
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="5dp">
+
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="200dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="105dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="monospace"
+            android:onClick="Login"
+            android:text="@string/t_existing_user_login_here_t"
+            android:textStyle="bold"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/registerbutton" />
+
+        <Button
+            android:id="@+id/developerbutton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="monospace"
+            android:onClick="developer"
+            android:text="@string/developer"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="386dp" />
+
+        <Button
+            android:id="@+id/registerbutton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="33dp"
+            android:textColor="#000000"
+            android:background="@drawable/custom_button"
+            android:fontFamily="monospace"
+            android:onClick="Register"
+            android:text="@string/t_new_user_register_here_t"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="34dp"
+            android:layout_above="@+id/loginbutton"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
