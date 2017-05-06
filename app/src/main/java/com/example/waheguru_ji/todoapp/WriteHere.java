@@ -61,6 +61,7 @@ EditText e;
         dob.putInform(dob,pass,str);
         Intent j=new Intent(this,MainActivity.class);
         startActivity(j);
+        finish();
 
     }
 
