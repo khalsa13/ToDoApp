@@ -29,6 +29,9 @@ public class LoginHere extends AppCompatActivity {
         e1.setText("");
         e2.setText("");
     }
+    public void deletepass()
+    {
+    }
 
     public void signIn(View view)
     {
@@ -54,6 +57,7 @@ public class LoginHere extends AppCompatActivity {
             b.putString("stuff",pass);
             x.putExtras(b);
             startActivity(x);
+            finish();
         }
         else
         {
