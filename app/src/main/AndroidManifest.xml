@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:screeOrientation="Potrait"
             android:label="2017 To-Do"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -20,19 +21,23 @@
             </intent-filter>
         </activity>
         <activity
+            android:screeOrientation="Potrait"
             android:name="Register"
             android:label="Register"
             android:theme="@style/AppTheme" />
         <activity
             android:name="WriteHere"
             android:label="Write Here"
+            android:screeOrientation="Potrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name="LoginHere"
             android:label="Login"
+            android:screeOrientation="Potrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name="Developer"
+            android:screeOrientation="Potrait"
             android:label="Developer's Profile"
             android:theme="@style/AppTheme"></activity>
     </application>
